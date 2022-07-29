@@ -22,6 +22,18 @@ module Lemoney
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address:              'smtp.qiye.aliyun.com',
+      port:                 25,
+      domain:               'smtp.qiye.aliyun.com',
+      user_name:            Rails.application.credentials.dig(:mailer, :email),
+      password:             Rails.application.credentials.dig(:mailer, :password),
+      authentication:       'plain',
+      enable_starttls_auto: true,
+      open_timeout:         5,
+      read_timeout:         5 }
+
 
     # Configuration for the application, engines, and railties goes here.
     #
