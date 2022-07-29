@@ -1,0 +1,16 @@
+zh:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "邮箱不能为空"
+              invalid: "邮箱格式不合法"
+              taken: "邮箱已注册"
+            password:
+              blank: "密码不能为空"
+              too_short: "密码不能少于6位"
+              too_long: "密码不能超过20位"
+            password_confirmation:
+              confirmation: "两次密码不匹配"
