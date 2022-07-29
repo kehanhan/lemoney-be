@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>欢迎使用柠檬记账, <%= @user.name %></h1>
+    <p>
+      已成功验证 <%= @user.email %> 作为您的邮箱，请妥善保管好您的邮箱和密码。
+      <br>
+    </p>
+    <p>
+      官网: <%= @url %>.
+    </p>
+    <p>如果遇到任何问题，请发送邮箱至 <a href="mailto:lemoney@kehan.website">lemoney@kehan.website</a> </p>
+    <p>祝您使用愉快！</p>
+    <p>
+      柠檬记账团队  © <%= Time.now.year %> 
+    </p>
+  </body>
+</html>
