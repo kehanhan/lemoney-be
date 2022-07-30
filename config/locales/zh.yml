@@ -14,3 +14,17 @@ zh:
               too_long: "密码不能超过20位"
             password_confirmation:
               confirmation: "两次密码不匹配"
+  activemodel:
+    errors:
+      models:
+        session:
+          attributes:
+            email:
+              blank: "邮箱不能为空"
+              invalid: "邮箱格式不合法"
+              not_found: "邮箱未注册"
+            password:
+              blank: "密码不能为空"
+              too_short: "密码不能少于6位"
+              too_long: "密码不能超过20位"
+              mismatch: "密码不匹配"
