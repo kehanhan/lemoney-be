@@ -4,4 +4,8 @@ class Api::V1::UsersController < ApplicationController
         render_resource user
         UserMailer.welcome_email(user).deliver_later if user.persisted?
     end
+
+    def me
+        render_resource current_user
+    end
 end
