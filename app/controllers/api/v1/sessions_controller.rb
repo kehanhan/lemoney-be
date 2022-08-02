@@ -5,4 +5,9 @@ class Api::V1::SessionsController < ApplicationController
         render_resource s
         session[:current_user_id] = s.user.id if s.user.present?
     end
+
+    def destroy
+        session[:current_user_id] = nil
+        head :ok
+    end
 end
