@@ -14,6 +14,12 @@ zh:
               too_long: "密码不能超过20位"
             password_confirmation:
               confirmation: "两次密码不匹配"
+        record:
+          attributes:
+            amount:
+              blank: "金额不能为空"
+            category:
+              blank: "分类不能为空"
   activemodel:
     errors:
       models:
