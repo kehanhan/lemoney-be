@@ -6,6 +6,7 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def me
+        must_sign_in
         render_resource current_user
     end
 end
