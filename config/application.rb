@@ -25,7 +25,7 @@ module Lemoney
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
       address:              'smtp.qiye.aliyun.com',
-      port:                 25,
+      port:                 587,
       domain:               'smtp.qiye.aliyun.com',
       user_name:            Rails.application.credentials.dig(:mailer, :email),
       password:             Rails.application.credentials.dig(:mailer, :password),
